@@ -172,35 +172,35 @@
 //Ternary Operator and switch Statement===================================
 //  condition ? statement:statement;
 
-var fname = "parthil";
-var age = 22;
+// var fname = "parthil";
+// var age = 22;
 
-//Ternary operator
-age >=18 ? console.log(fname + " drinking beer") : console.log(fname + " drinks juice. ");
+// //Ternary operator
+// age >=18 ? console.log(fname + " drinking beer") : console.log(fname + " drinks juice. ");
 
-var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+// var drink = age >= 18 ? 'beer' : 'juice';
+// console.log(drink);
 
-//Switch statement ----------------------------------------------
+// //Switch statement ----------------------------------------------
 
-var job = "teacher";
+// var job = "teacher";
 
- switch(job){
-    case 'teacher':
-        case 'instructor':
-            console.log(fname + " teaches kids how to code. ");
-            break;
-            case 'driver':
-                console.log(fname + " drives an uber in lisbon. ");
-                break;
-                case 'deginer':
-                    console.log(fname + " designs beautiful websites. ");
-                    break;
-                    default:
-                        console.log(fname + " dose something else. ");
+//  switch(job){
+//     case 'teacher':
+//         case 'instructor':
+//             console.log(fname + " teaches kids how to code. ");
+//             break;
+//             case 'driver':
+//                 console.log(fname + " drives an uber in lisbon. ");
+//                 break;
+//                 case 'deginer':
+//                     console.log(fname + " designs beautiful websites. ");
+//                     break;
+//                     default:
+//                         console.log(fname + " dose something else. ");
 
 
-        }   
+//         }   
         
         
 
@@ -276,27 +276,265 @@ var job = "teacher";
 
 // FUNCTION==================================================================
 
-function calculateAge(birthYear)
-{
-    return 2018 - birthYear;
-}
+// function calculateAge(birthYear)
+// {
+//     return 2018 - birthYear;
+// }
 
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1948);
-var ageJane = calculateAge(1969);
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
+// var ageJane = calculateAge(1969);
 
-console.log(ageJohn,ageMike,ageJane);
+// console.log(ageJohn,ageMike,ageJane);
 
-function yearUnitRetirement(year, firstName)
-{
-    var age = calculateAge(year);
-    var retirement = 65 - age;
+// function yearUnitRetirement(year, firstName)
+// {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
 
-    retirement>=0 ? console.log(firstName + " retires in " + retirement + " years."):console.log("already retired.");
+//     retirement>=0 ? console.log(firstName + " retires in " + retirement + " years."):console.log("already retired.");
     
+// }
+
+// yearUnitRetirement(1990, "John");
+// yearUnitRetirement(1948, "Mike");
+// yearUnitRetirement(1969, "Jane");
+
+
+// Function Statement and Expressions==================
+// 
+
+// Function Expression
+
+// var whatDoYouDo = function(job, firstName) {
+//     switch(job) {
+//         case "teacher":
+//             return firstName + " teaches kids how to code. ";
+
+//         case "driver":
+//             return firstName + " drives a cab in lisbon. ";
+
+//         case "designer":
+//             return firstName + " design beatiful websites. ";
+//         default:
+//             return firstName + " does something else ";
+//     }
+
+// }
+
+// console.log(whatDoYouDo("teacher","John"));
+// console.log(whatDoYouDo("driver","Mari"));
+// console.log(whatDoYouDo("designer","Mark"));
+
+
+// Array ===============================================================
+
+//   var names = ["John", "Mark", "Jane"];
+//   var years = new Array(1990, 1969, 1948);
+
+//   console.log(names[2]);
+//   console.log(names.length);
+
+//   //Mutate array data
+//   names[1] = "Ben";
+//   names[names.length] = "Mary";
+//   console.log(names);
+
+//   var john = ["John", "Smith", 1990, "teacher", false];
+//   console.log(john);
+//   john.push("blue");  //for last added
+//   john.unshift("Mr");   //for first added
+  
+//   console.log(john);
+
+//   john.pop();       //for last delete
+//   john.pop();
+//   console.log(john);
+//   john.shift();      //for first delete
+//   console.log(john);
+
+//   console.log(john.indexOf(23));
+
+// var isDesigner = john.indexOf("desiner") == -1 ? "John is Not a designer." : "John is a designer";
+
+//   console.log(isDesigner);
+
+
+//Challenge=================================================
+//   124   48   268
+// 50amount<    20%
+// 20 to 200    15%
+// 200 more     10%
+
+// var rBill = [124, 48, 268];
+
+
+// function tipCal(bill){
+//     var percentage;
+//     if(bill < 50)
+//     {
+//         percentage = 0.2;
+//     }
+//     else
+//     if(bill >= 50 && bill < 200)
+//     {
+//         percentage = 0.15;
+//     }
+//     else
+//     {
+//         percentage = 0.1;
+//     }
+//     return percentage * bill;
+// }
+
+// var bills = [12, 48, 268];
+// var tips = [tipCal(bills[0]), tipCal(bills[1]), tipCal(bills[2])];
+
+// var finalValues = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
+
+// console.log(tips,finalValues);
+// console.log(tips[0],finalValues[0]);
+// console.log(tips[1],finalValues[1]);
+// console.log(tips[2],finalValues[2]);
+  
+
+//Object and Properties===============================================================
+
+
+//Object Literal
+//  var john = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     birthYear: 1990,
+//     family: ["Jane", "Mark", "Bob", "Emily"],
+//     job: "teacher",
+//     isMarried: false
+//  };
+
+//  console.log(john.firstName);
+//  console.log(john["lastName"]);
+//  var x = "birthYear";
+//  console.log(john[x]);
+//mit
+//  john.job = "designer";
+// john["isMarried"] = true;
+// console.log(john);
+
+// //new Object Syntax
+// var jane = new Object();
+// jane.firstName = "Jane";
+// jane.birthYear = 1969;
+// jane["lastName"] = "Smith";
+// console.log(jane);
+
+
+
+// var john = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     birthYear: 1990,
+//     family: ["Jane", "Mark", "Bob", "Emily"],
+//     job: "teacher",
+//     isMarried: false,
+//     calcAge: function(birthYear) {
+//         return 2018 - birthYear;
+//     },
+//     calcAgeme: function() {
+//         return 2018 - this.birthYear;
+//     },
+//     calcAgemes: function() {
+//         this.age = 2018 - this.birthYear;
+//     }
+//  };
+
+//  console.log(john.calcAge(1992));
+//  console.log(john.calcAgeme());
+
+//  john.calcAgemes();
+//  console.log(john);  
+
+//CODE CHALLENGE=================================================
+
+// var John = {
+//     fullName: "John",
+//     mass: 55,
+//     height: 4,
+//     BMI: function(){
+//         this.BMI = this.mass / (this.height*this.height);
+        
+//     }
+// };
+
+// John.BMI();
+// console.log(John);
+// var Mark = {
+//     fullName: "Mark",
+//     mass: 59,
+//     height: 5,
+//     BMI: function(){
+//         this.BMI = this.mass / (this.height*this.height);
+        
+//     }
+// };
+
+// Mark.BMI();
+// console.log(Mark);
+
+
+// if(Mark.BMI > John.BMI)
+// {
+//          console.log(Mark.fullName + " BMI = " + Mark.BMI + " is higher than John");
+
+// }
+// else
+// {
+//          console.log(John.fullName + " BMI = " + John.BMI + " is higher than Marks");
+
+// }
+
+
+//LOOPS AND ITERATION====================================================================
+
+
+//for loop 
+
+// for(var i=1; i<=20; i+=2)
+// {
+//     console.log(i);
+// }
+
+// var john = ["John", "Smith", 1998, "designer", false, "blue"];
+// for(var i=0; i<john.length; i++)
+// {
+//     console.log(john[i]);
+// }
+
+// //while loop
+// var i=0;
+// while(i < john.length)
+// {
+//     console.log(john[i]);
+//     i++;
+// }
+
+//continue and break statements
+
+var john = ["John", "Smith", 1998, "designer", false, "blue"];
+for(var i=0; i<john.length; i++)
+{
+    if(typeof john[i] != "string") continue;
+    console.log(john[i]);
 }
 
-yearUnitRetirement(1990, "John");
-yearUnitRetirement(1948, "Mike");
-yearUnitRetirement(1969, "Jane");
+for(var i=0; i<john.length; i++)
+{
+    if(typeof john[i] != "string") break;
+    console.log(john[i]);
+}
+
+//Looping backwards
+for(var i=john.length-1; i>=0; i--)
+{
+    console.log(john[i]);
+}
 
