@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MY WEATHER</h1>
+        </div>
+        <div class="city-name">
+            <h2>LOCATION</h2>
+            <!-- <a class="data_city">Surat       SET</a> -->
+            <!-- <a class="_set">SET</a> -->
+            <select class="city" id="city" onclick="firstClick()" >
+                <option value="" selected="selected">Please select City</option>
+                <!-- <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodra</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="audi">Audi</option> -->
+              </select>
+        </div>
+        <div id="loader">
+            <img src="loading.png" class="loadingimg" alt="Alps" width="290" height="290">
+        </div>
+            <div class="card">
+                <div class="weatherimg">
+                    <img id="imgweather" src="" alt="imgweather">
+                </div>
+                <div class="dataweather">
+                    <div class="temp">
+                        <span class="numb">_</span>
+                        <span class="deg">°</span>C
+                      </div>
+                      <div class="weather">_ _</div>
+                    <!-- <h1>22.</h1> -->
+                    <!-- <h2>Clouds</h2> -->
+                    <div class="date-class">Sunday,July 21</div>
+                </div>
+               
+            </div>
+        <div class="footer">
+            <h3 class="fisrt-footer">MY WEATHER</h3>
+           <div class="new1">
+           </div>
+                    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
