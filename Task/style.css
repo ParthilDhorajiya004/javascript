@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #43AFFC;
+  }
+
+  .container{
+    /* display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #F7F7F7; */
+    width: 700px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 7px 7px 20px rgb(0 0 0 / 5%);
+  }
+
+.header {
+    color: white;
+    background-color: #ffc802;
+    padding: 30px;
+    text-align: center;
+}
+h2 {
+    margin-left: -200px;
+    margin-top: 44px;
+    margin-bottom: 11px;
+}
+.city-name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#imgweather{
+    border-radius: 11px;
+    height: 212px;
+    width: 203px;
+    
+}
+.weatherimg {
+    display: flex;
+    flex-direction: column;
+}
+
+.data_city {
+    position: absolute;
+    bottom: -31px;
+}
+
+._set {
+    color: blueviolet;
+
+}
+
+.city 
+{
+    padding: 20px;
+    padding-right: 200px;
+
+}
+
+h3 {
+    padding: 24px;
+}
+h1 ,h4, h3{
+    text-align: center;
+}
+/* .weather { 
+    text-align: center;
+} */
+.temp ,.weather{
+    text-align: center;
+    font-size: 21px;
+    
+}
+.card {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+    margin-top: 45px;
+    border-radius: 35px;
+    box-shadow: 0px 2px 5px #5f5858;
+    align-items: center;
+ 
+}
+
+.footer {
+    margin-top: 47px;
+    display: flex;
+   
+}
+   
+#loader{
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    justify-content: center;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#loading.display {
+    display: flex;
+    
+}
+.numb ,.temp{
+    font-weight: 600;
+}
+.deg {
+    font-size: 60px;
+    margin: 10px 5px 0 0;
+ } 
+.temp{
+    font-weight: 500;
+    font-size: 50px;
+} 
+.weather {
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+.date-class {
+    display: flex;
+    font-size: 19px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+.fisrt-footer {
+    width: 40%;
+}
+.new1 {
+    width: 50%;
+    height: 1px;
+    margin-top: 35px;
+    background: black;
+}
